@@ -1,0 +1,27 @@
+-- Use list
+use G as Graphics.
+
+-- Variable
+bool running.
+int framerate.
+
+running = True.
+framerate = 10.
+
+-- Setup
+Graphics init.
+Graphics display 500, 300.
+Graphics title Graphic Test.
+
+-- Loop
+while running.
+Graphics tick framerate.
+Graphics eventloop running.
+Graphics background 83, 168, 209.
+
+-- Draw
+Graphics line 0, 0, 0, 30, 60, 120, 80, 10.
+Graphics line 128, 252, 222, 80, 72, 120, 99, 8.
+Graphics flip.
+endwhile Graphic Test.
+end

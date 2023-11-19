@@ -1,0 +1,18 @@
+function Function.
+    bool condition.
+
+    condition = False.
+
+    if condition.
+    print "True!".
+    else !condition.
+    print "False!".
+    endif If the condition is true, "True!" message. Otherwise "False!"..
+
+    return Function.
+
+call Function.
+call Function.
+call Function.
+call Function.
+end

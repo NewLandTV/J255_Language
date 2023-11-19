@@ -1,0 +1,10 @@
+-- Variables
+string ip.
+int port.
+int bufferSize.
+string receiveBuffer.
+
+ip = "localhost".
+port = 1234.
+bufferSize = 1024.
+end

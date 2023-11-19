@@ -1,0 +1,13 @@
+-- Variables
+bool isJump.
+
+isJump = False.
+
+-- Check
+println before.
+
+if False.
+println Is jumping!.
+endif isJump.
+
+println after.

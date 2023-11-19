@@ -1,0 +1,31 @@
+-- Variables
+float delay.
+string progressSprite.
+
+delay = 0.2.
+progressSprite = "=".
+
+-- Progress bar
+print [.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+sleep delay.
+print progressSprite.
+print ].
+sleep delay.
+end

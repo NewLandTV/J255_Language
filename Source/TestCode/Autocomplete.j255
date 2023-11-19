@@ -1,0 +1,24 @@
+bool man.
+float health.
+
+if man.
+print health.
+endif print health if man.
+
+input health.
+
+int integerA.
+
+integerA = 10.
+
+loop integerA.
+println integerA.
+endloop Loop integerA.
+
+sleep 2.
+string message.
+
+message = "Hello, World!".
+
+println message.
+end

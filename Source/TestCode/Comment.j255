@@ -1,0 +1,18 @@
+int a.
+int b.
+int temp.
+
+-- Input
+input a.
+input b.
+
+print a.
+print b.
+
+-- Exchange
+temp = a.
+a = b.
+b = temp.
+
+--(print a.
+print b.)--

@@ -1,0 +1,9 @@
+-- Loop
+println before for loop.
+
+loop 5.
+println Hello, World!.
+endloop 5.
+
+println After for loop.
+end

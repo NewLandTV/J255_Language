@@ -1,0 +1,35 @@
+-- Use list
+use Net.
+
+-- Includes
+include NetworkSettings^.j255.
+
+-- Variables
+string message.
+
+-- Server setup
+println [Echo Server].
+
+Net init AF_INET, TCP.
+Net bind ip, port.
+Net listen.
+
+-- Accept client
+Net accept.
+
+println Connected client!.
+
+Net receive bufferSize, receiveBuffer.
+
+println receiveBuffer.
+
+message = "[Echo Server] : ".
+message += receiveBuffer.
+
+Net send message.
+
+println message.
+
+-- Close
+Net close.
+end

@@ -1,0 +1,10 @@
+-- Variables
+int index.
+
+index = 0.
+
+loop 10.
+println index.
+index += 1.
+endloop index++.
+end

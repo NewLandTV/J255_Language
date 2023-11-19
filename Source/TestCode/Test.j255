@@ -1,0 +1,15 @@
+int hp.
+float speed.
+string name.
+bool man.
+
+hp = 25.
+speed = 4.75.
+name = "Hello World!".
+man = True.
+
+print hp.
+print speed.
+print name.
+print man.
+end

@@ -1,0 +1,27 @@
+float a.
+float b.
+float result.
+
+input a.
+input b.
+
+result = a.
+result += b.
+
+print result.
+
+result = a.
+result -= b.
+
+print result.
+
+result = a.
+result *= b.
+
+print result.
+
+result = a.
+result /= b.
+
+print result.
+end

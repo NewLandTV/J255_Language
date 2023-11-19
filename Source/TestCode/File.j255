@@ -1,0 +1,7 @@
+string fileData.
+
+readfile E:\UserData\txts\GrowingTown_게임기획^.txt fileData.
+writefile E:\TempFile^.txt Hello, World!.
+
+println fileData.
+end

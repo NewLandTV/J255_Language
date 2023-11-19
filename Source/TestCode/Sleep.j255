@@ -1,0 +1,15 @@
+-- Variables
+int second.
+float milliseconds.
+
+second = 3.
+milliseconds = 0.5.
+
+print second.
+sleep second.
+print milliseconds.
+sleep milliseconds.
+print 10.
+sleep 10.
+print Complete!.
+end

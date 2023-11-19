@@ -1,0 +1,86 @@
+-- Use list
+use G as Graphics.
+
+-- Variable
+int windowWidth.
+int windowHeight.
+int halfWindowWidth.
+int halfWindowHeight.
+bool running.
+int frameRate.
+string potatoImagePath.
+int potatoImageSize.
+int halfPotatoImageSize.
+int potatoImageXPosition.
+int potatoImageYPosition.
+int currentScore.
+bool increaseScoreButtonClick.
+int increaseScoreButtonXPosition.
+int increaseScoreButtonYPosition.
+
+windowWidth = 960.
+windowHeight = 540.
+halfWindowWidth = 480.
+halfWindowHeight = 270.
+running = True.
+frameRate = 30.
+potatoImagePath = "E:/Programming/Projects/Unity/Game/GrowingTown/Assets/Images/Food/Potato^.png".
+potatoImageSize = 128.
+halfPotatoImageSize = potatoImageSize.
+halfPotatoImageSize = 64.
+potatoImageXPosition = 256.
+potatoImageXPosition = halfWindowWidth.
+potatoImageXPosition -= halfPotatoImageSize.
+potatoImageYPosition = halfWindowHeight.
+potatoImageYPosition -= halfPotatoImageSize.
+currentScore = 0.
+increaseScoreButtonClick = False.
+increaseScoreButtonXPosition = halfWindowWidth.
+increaseScoreButtonXPosition -= 110.
+increaseScoreButtonYPosition = windowHeight.
+increaseScoreButtonYPosition -= 60.
+
+-- Setup
+Graphics init.
+Graphics display windowWidth, windowHeight.
+Graphics title Simple Game.
+
+-- Loop
+while running.
+Graphics tick frameRate.
+Graphics eventloop running.
+Graphics background 63, 63, 63.
+
+-- Draw
+Graphics image potatoImagePath, potatoImageXPosition, potatoImageYPosition, potatoImageSize, potatoImageSize.
+Graphics text currentScore, 160, 98, 171, halfWindowWidth, 25, 50.
+Graphics button 255, 255, 255, increaseScoreButtonXPosition, increaseScoreButtonYPosition, 220, 60, increaseScoreButtonClick.
+Graphics flip.
+
+-- Button events
+if increaseScoreButtonClick.
+increaseScoreButtonClick = False.
+currentScore += 1.
+
+-- Increase size of potato image
+if currentScore % 10 == 0.
+potatoImageSize += 16.
+halfPotatoImageSize += 8.
+potatoImageXPosition = halfWindowWidth.
+potatoImageXPosition -= halfPotatoImageSize.
+potatoImageYPosition = halfWindowHeight.
+potatoImageYPosition -= halfPotatoImageSize.
+endif if currentScore % 10 == 0, increase the potato size.
+endif if increaseScoreButtonClick is true, increase the score.
+
+-- Reset size the potato image
+if currentScore % 250 == 0.
+potatoImageSize = 128.
+halfPotatoImageSize = 64.
+potatoImageXPosition = halfWindowWidth.
+potatoImageXPosition -= halfPotatoImageSize.
+potatoImageYPosition = halfWindowHeight.
+potatoImageYPosition -= halfPotatoImageSize.
+endif currentScore % 250 == 0, reset the potato size.
+endwhile Simple Game.
+end
