@@ -1,7 +1,10 @@
 # **J255 Language(J255 언어)**
 
 I made a custom programming language in python.
+
 파이썬으로 커스텀 프로그래밍 언어를 만들었습니다.
+
+[J255언어 재생목록](https://www.youtube.com/playlist?list=PLG6918Ng_f9tCx22xAMca_NFQJjOKkfnp)
 
 # **Syntax(문법)**
 
